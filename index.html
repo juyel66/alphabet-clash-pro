@@ -15,11 +15,11 @@
 
     <main class="bg-[#1E1E1E] min-h-screen bg-[url(images/background.png)] bg-no-repeat bg-center">
             <!-- home  -->
-    <section class="hidden Home text-white justify-center min-h-screen  flex items-center">
+    <section class=" Home text-white justify-center min-h-screen  flex items-center">
         <div class="flex flex-col gap-10 items-center">
             <h1 class="text-8xl">Alpha clash pro</h1>
         <p >Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-        <button class="btn w-[150px] text-xl" >Play now</button>
+        <button onclick="Play()" class="btn w-[150px] text-xl" >Play now</button>
         </div>
 
 
@@ -28,10 +28,21 @@
 
 
     <!-- play-ground -->
-    <section class="play-ground">
-        <div>
+    <section class="play-ground hidden ">
+        <div class="flex flex-col items-center gap-10 pt-10">
             <!-- screen  -->
-            <div class="artboard artboard-horizontal border-[20px] border-[#010313CC] rounded-2xl bg-[#FFFFFFB3] phone-6">1024×320</div>
+            <div class="artboard artboard-horizontal border-[20px] border-[#010313CC] rounded-2xl bg-[#FFFFFFB3] phone-6">
+                <div class="flex justify-center">
+                    <p class="bg-[#2F2941] px-6 rounded-b-xl pb-6 text-white">Don't watch keyboard  while playing...</p>
+                </div>
+
+                <div class="flex items-center flex-col text-9xl text-bold justify-center text-black">
+                    <p >Y</p>
+                </div>
+                
+            </div>
+
+           
             <!-- keyboard start -->
             <div>
                 <div class="flex justify-center gap-1 my-1 w-full">
@@ -70,17 +81,45 @@
             </div>
             <!-- keyboard end -->
             <!-- live score  -->
+            <div class="flex justify-between w-4/6">
+                <div>
+                    <button class="btn rounded-full bg-purple-600 text-white">
+                        Life
+                        <img src="images/Group 23.svg" alt="">
+                        <span>1</span>
+                        
+                      </button>
+                </div>
+                 <div>
+                    <button class="bg-purple-600 text-white btn rounded-full">
+                        Score
+                      <img src="images/monetization_on.svg" alt="">
+                      <span>1</span>
+                       
+                      </button>
+                 </div>
+            </div>
         </div>
 
     </section>
 
 
     <!-- score  -->
-    <section class="score">
+    <section class="hidden score  flex justify-center items-center space-y-6 text-center  min-h-screen">
+
+        <div class="space-y-6 bg-[#FFFFFF66] shadow-sm p-4 rounded-[10px]">
+            <h1 class="text-8xl text-white"> 
+                <span class="font-extrabold">Score:</span>
+                <span>14</span>
+            </h1>
+    
+            <button class="btn w-[150px]">Play Agin</button>
+            <p class="text-white text-2xl">Practice will make you Pro</p>
+        </div>
 
     </section>
     </main>
 
-    
+    <script src="script/alpha-clash.js"></script>
 </body>
 </html>
