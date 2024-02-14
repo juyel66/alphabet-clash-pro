@@ -51,6 +51,11 @@ function continueGame(){
     setBackgroundColorById(alphabet);
 
 }
+function removeBackgroundColorById(elementId){
+    const element = document.getElementById(elementId);
+    element.classList.remove('bg-orange-500');
+
+}
 
 
 
