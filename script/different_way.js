@@ -41,6 +41,11 @@ function handleKeyboardKeyupEvent(event){
     const playerPress = event.key
     console.log('Player Press:', playerPress);
 
+    // stop the game 
+    if(playerPress==='0'){
+        gameOver();
+    }
+
     // get the excepted to press 
     const currentAlphabetElementById = document.getElementById('current-alphabet');
    
